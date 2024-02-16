@@ -4,6 +4,7 @@ import { Fragment, useState } from "react";
 
 import { Header } from "./layout/header";
 import { Sidebar } from "./layout/sidebar";
+import { DataRoom } from "./pages/data-room";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -96,7 +97,9 @@ function App() {
         </div>
 
         <main className="py-10">
-          <div className="px-4 sm:px-6 lg:px-8">Content</div>
+          <div className="px-4 sm:px-6 lg:px-8">
+            <DataRoom />
+          </div>
         </main>
       </div>
     </div>
